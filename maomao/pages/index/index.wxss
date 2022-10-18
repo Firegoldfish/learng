@@ -1,0 +1,7 @@
+/* pages/index/index.wxss */
+.swiper-box{
+  height: 1500px;
+}
+.swiper-box image{
+  width: 100%;
+}

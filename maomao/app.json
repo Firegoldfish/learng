@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/small_video/small_video",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/show/show",
+    "pages/vide/vide"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e54847",
+    "navigationBarTitleText": "（盗版的）猫猫电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#E54847",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/assets/movie.png",
+        "selectedIconPath": "/assets/movie-active.png"
+
+      },
+      {
+        "text": "视频",
+        "pagePath": "pages/vide/vide",
+        "iconPath": "/assets/video.png",
+        "selectedIconPath": "/assets/video-active.png"
+      },
+      {
+        "text": "小视频",
+        "pagePath": "pages/small_video/small_video",
+        "iconPath": "/assets/videoplay.png",
+        "selectedIconPath": "/assets/video-play-active.png"
+      },
+      {
+        "text": "演出",
+        "pagePath": "pages/show/show",
+        "iconPath": "/assets/show.png",
+        "selectedIconPath": "/assets/show-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "/assets/my.png",
+        "selectedIconPath": "/assets/my-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+<view>
+  <swiper class="swiper-box">
+    <swiper-item> 
+      <image mode="widthFix" src="../../assets/starwars7.jpg"></image>
+    </swiper-item> 
+    <swiper-item>
+      <image mode="widthFix" src="../../assets/STARWARS8.jpeg"></image>
+    </swiper-item> 
+    <swiper-item> 
+      <image mode="widthFix" src="../../assets/STARWARS9.jpg"></image>
+    </swiper-item> 
+  </swiper>
+</view>
