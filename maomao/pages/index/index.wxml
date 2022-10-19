@@ -4,7 +4,7 @@
       <image mode="widthFix" src="../../assets/sw7.jpg"></image>
     </swiper-item> 
     <swiper-item>
-      <image mode="widthFix" src="../../assets/swX.jpg"></image>
+      <image mode="widthFix" src="../../assets/swx.jpg"></image>
     </swiper-item> 
     <swiper-item> 
       <image mode="widthFix" src="../../assets/SW9.jpg"></image>
@@ -20,28 +20,13 @@
   <view wx:if ="{{num==1}}">
     <view class="perfectm">
       <text class="title">最受好评电影</text>
-      <view>
-        <scroll-view scroll-x="{{true}}" class="scroll-box">
-          <view class="scroll-item">
-          <image src="../../assets/starwars7.jpg" mode="widthFix"></image>
-          <view class="film_name">星球大战7</view>
-          </view>
-          <view class="scroll-item">
-            <image src="../../assets/starwars7.jpg" mode="widthFix"></image>
-          <view class="film_name">星球大战7</view>
-          </view>
-          <view class="scroll-item">
-            <image src="../../assets/starwars7.jpg" mode="widthFix"></image>
-          <view class="film_name">星球大战7</view>
-          </view>
-          <view class="scroll-item"><image src="../../assets/starwars7.jpg" mode="widthFix"></image>
-          <view class="film_name">星球大战7</view>
-          </view>
-          <view class="scroll-item"><image src="../../assets/starwars7.jpg" mode="widthFix"></image>
-          <view class="film_name">星球大战7</view>
-          </view>
-        </scroll-view>
-      </view>
+      <scroll-view class="scroll-box" scroll-x="{{true}}">
+        <view class="scroll-item" wx:for="{{list}}">
+         <view class="shen"> <image src="{{item.img}}" mode="widthFix"></image></view>
+          <view class="film_name">{{item.nm}}</view>
+        </view>
+        
+      </scroll-view>
     </view>
   </view>
   <view wx:if ="{{num==2}}">2</view>

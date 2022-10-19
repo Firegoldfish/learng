@@ -39,8 +39,18 @@
   width: 100px;
 }
 .scroll-item image{
-  width: 165rpx;
+  width: 85px;
 }
 .film_name{
-  
+  font-size: 13px;
+  width: 83px;
+  color: #222;
+  margin: 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shen{
+  height: 115px;
+  overflow: hidden;
 }
