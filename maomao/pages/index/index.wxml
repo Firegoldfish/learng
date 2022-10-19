@@ -1,13 +1,13 @@
 <view>
   <swiper class="swiper-box">
     <swiper-item> 
-      <image mode="widthFix" src="../../assets/sw7.jpg"></image>
+      <image mode="widthFix" src="../../assets/s7.webp"></image>
     </swiper-item> 
     <swiper-item>
-      <image mode="widthFix" src="../../assets/swx.jpg"></image>
+      <image mode="widthFix" src="../../assets/sw8.jpg"></image>
     </swiper-item> 
     <swiper-item> 
-      <image mode="widthFix" src="../../assets/SW9.jpg"></image>
+      <image mode="widthFix" src="../../assets/S9.webp"></image>
     </swiper-item> 
   </swiper>
   <view class="tab">
