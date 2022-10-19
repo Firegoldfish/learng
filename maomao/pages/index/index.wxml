@@ -11,13 +11,26 @@
     </swiper-item> 
   </swiper>
   <view class="tab">
-  <view data-num="1"  bindtap="change_num">热映</view>
-  <view data-num="2"  bindtap="change_num">影院</view>
-  <view data-num="3"  bindtap="change_num">待映</view>
-  <view data-num="4"  bindtap="change_num">经典电影</view>
-  <view data-num="5"  bindtap="change_num">小剧场</view>
+  <view class="{{num==1?'active':''}}" data-num="1"  bindtap="change_num">热映</view>
+  <view class="{{num==2?'active':''}}" data-num="2"  bindtap="change_num">影院</view>
+  <view class="{{num==3?'active':''}}" data-num="3"  bindtap="change_num">待映</view>
+  <view class="{{num==4?'active':''}}" data-num="4"  bindtap="change_num">经典电影</view>
+  <view class="{{num==5?'active':''}}" data-num="5"  bindtap="change_num">小剧场</view>
   </view>
-  <view wx:if ="{{num==1}}">1</view>
+  <view wx:if ="{{num==1}}">
+    <view class="perfectm">
+      <text class="title">最受好评电影</text>
+      <view>
+        <scroll-view scroll-x="{{true}}" class="scroll-box">
+          <view class="scroll-item"></view>
+          <view class="scroll-item"></view>
+          <view class="scroll-item"></view>
+          <view class="scroll-item"></view>
+          <view class="scroll-item"></view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
   <view wx:if ="{{num==2}}">2</view>
   <view wx:if ="{{num==3}}">3</view>
   <view wx:if ="{{num==4}}">4</view>

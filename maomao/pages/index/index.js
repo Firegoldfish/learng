@@ -7,12 +7,16 @@ Page({
   data: {
     num:3
   },
-change_num (e) {
-  console.log(e.target.dataset.num);
-  this.setData({
-    num:e.target.dataset.num
-  })
-},
+  change_num (e) {
+    console.log(e.target.dataset.num);
+    this.setData({
+      num:e.target.dataset.num
+    })
+  },
+  scroll (e) {
+    console.log(e)
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
