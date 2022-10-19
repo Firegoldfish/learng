@@ -5,9 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    num:3
   },
-
+change_num (e) {
+  console.log(e.target.dataset.num);
+  this.setData({
+    num:e.target.dataset.num
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */

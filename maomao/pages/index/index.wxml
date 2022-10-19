@@ -1,13 +1,25 @@
 <view>
   <swiper class="swiper-box">
     <swiper-item> 
-      <image mode="widthFix" src="../../assets/starwars7.jpg"></image>
+      <image mode="widthFix" src="../../assets/sw7.jpg"></image>
     </swiper-item> 
     <swiper-item>
-      <image mode="widthFix" src="../../assets/STARWARS8.jpeg"></image>
+      <image mode="widthFix" src="../../assets/swX.jpg"></image>
     </swiper-item> 
     <swiper-item> 
-      <image mode="widthFix" src="../../assets/STARWARS9.jpg"></image>
+      <image mode="widthFix" src="../../assets/SW9.jpg"></image>
     </swiper-item> 
   </swiper>
+  <view class="tab">
+  <view data-num="1"  bindtap="change_num">热映</view>
+  <view data-num="2"  bindtap="change_num">影院</view>
+  <view data-num="3"  bindtap="change_num">待映</view>
+  <view data-num="4"  bindtap="change_num">经典电影</view>
+  <view data-num="5"  bindtap="change_num">小剧场</view>
+  </view>
+  <view wx:if ="{{num==1}}">1</view>
+  <view wx:if ="{{num==2}}">2</view>
+  <view wx:if ="{{num==3}}">3</view>
+  <view wx:if ="{{num==4}}">4</view>
+  <view wx:if ="{{num==5}}">5</view>
 </view>
