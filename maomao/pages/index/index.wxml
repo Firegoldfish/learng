@@ -22,11 +22,24 @@
       <text class="title">最受好评电影</text>
       <view>
         <scroll-view scroll-x="{{true}}" class="scroll-box">
-          <view class="scroll-item"></view>
-          <view class="scroll-item"></view>
-          <view class="scroll-item"></view>
-          <view class="scroll-item"></view>
-          <view class="scroll-item"></view>
+          <view class="scroll-item">
+          <image src="../../assets/starwars7.jpg" mode="widthFix"></image>
+          <view class="film_name">星球大战7</view>
+          </view>
+          <view class="scroll-item">
+            <image src="../../assets/starwars7.jpg" mode="widthFix"></image>
+          <view class="film_name">星球大战7</view>
+          </view>
+          <view class="scroll-item">
+            <image src="../../assets/starwars7.jpg" mode="widthFix"></image>
+          <view class="film_name">星球大战7</view>
+          </view>
+          <view class="scroll-item"><image src="../../assets/starwars7.jpg" mode="widthFix"></image>
+          <view class="film_name">星球大战7</view>
+          </view>
+          <view class="scroll-item"><image src="../../assets/starwars7.jpg" mode="widthFix"></image>
+          <view class="film_name">星球大战7</view>
+          </view>
         </scroll-view>
       </view>
     </view>
