@@ -1,13 +1,13 @@
 <view>
   <swiper class="swiper-box">
     <swiper-item> 
-      <image mode="widthFix" src="../../assets/s7.webp"></image>
+      <image mode="widthFix" src="https://img2.doubanio.com/view/photo/raw/public/p2293954151.jpg"></image>
     </swiper-item> 
     <swiper-item>
-      <image mode="widthFix" src="../../assets/sw8.jpg"></image>
+      <image mode="widthFix" src="https://img9.doubanio.com/view/photo/raw/public/p2508823554.jpg"></image>
     </swiper-item> 
     <swiper-item> 
-      <image mode="widthFix" src="../../assets/S9.webp"></image>
+      <image mode="widthFix" src="https://img1.doubanio.com/view/photo/raw/public/p2870609949.jpg"></image>
     </swiper-item> 
   </swiper>
   <view class="tab">
@@ -21,12 +21,30 @@
     <view class="perfectm">
       <text class="title">最受好评电影</text>
       <scroll-view class="scroll-box" scroll-x="{{true}}">
-        <view class="scroll-item" wx:for="{{list}}">
+        <view class="scroll-item" wx:for="{{list}}" wx:key="id">
          <view class="shen"> <image src="{{item.img}}" mode="widthFix"></image></view>
           <view class="film_name">{{item.nm}}</view>
         </view>
         
       </scroll-view>
+    </view>
+    <view class="main">
+    <view class="film_main_box" wx:for="{{list}}" wx:key="id">
+    <view class="film_left">
+    <image src="{{item.img}}" mode="widthFix"></image>
+    </view>
+    <view class="film_right">
+    <view class="right_l">
+    <view class="nm">{{item.nm}}</view>
+    <view class="mk">观众评 <text>{{item.mk}}</text></view>
+    <view class="desc">{{item.desc}}</view>
+    <view class="si">{{item.showInfo}}</view>
+    </view>
+    <view class="right_r">
+    <button class="buy"> 购票</button>
+    </view>
+    </view>
+    </view>
     </view>
   </view>
   <view wx:if ="{{num==2}}">2</view>

@@ -54,3 +54,63 @@
   height: 115px;
   overflow: hidden;
 }
+.main{
+  border-top: 10px solid #f5f5f5;
+}
+.film_main_box{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+}
+.film_left{
+  flex: 1;
+}
+.film_right{
+  flex: 3;
+  border-bottom: 1px solid #f0f0f0;
+  display:flex;
+}
+.right_l{
+  flex: 2;
+}
+.right_r{
+  flex: 1;
+}
+.film_main_box image{
+  width: 64px;
+}
+.nm{
+  font: 17px;
+  font-weight: 700;
+}
+.mk{
+  font-size: 13px;
+  color: #666;
+}
+.mk text{
+  font-size: 16px;
+  color: #faaf00;
+}
+.desc{
+  font-size: 13px;
+  margin-top: 5px;
+  color: #666;
+}
+.si{
+  margin-top: 5px;
+  font-size: 13px;
+  color: #666;
+}
+.buy{
+  background-color:rgb(240,61,55);
+  color: white;
+  width: 54px !important;
+  height: 28px;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  padding: 0 !important;
+  line-height: 28px;
+  border-radius: 80px;
+}
