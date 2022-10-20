@@ -26,7 +26,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    let that=this
+    wx.request({
+      url: 'http://localhost:3001/data',
+      success(res){
+        that.setData({
+          detail: res.data
+        })
+      }
+    })
   },
 
   /**

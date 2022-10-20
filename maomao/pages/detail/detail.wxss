@@ -1,15 +1,29 @@
 /* pages/detail/detail.wxss */
 page{
   background-color: #1e324a;
+  padding: 10px;
 }
 .top{
   display: flex;
 }
 .t-l{
   flex: 1;
-  background-color: red;
+  
 }
 .t-r{
   flex: 2;
-  background-color: green;
+}
+.t-l image{
+  width: 120px;
+}
+.chname{
+  font-size:25px ;
+  color: rgb(255, 255, 255);
+  height: 700;
+}
+.engname{
+
+}
+.star{
+  display: flex;
 }

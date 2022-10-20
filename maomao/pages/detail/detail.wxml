@@ -1,7 +1,14 @@
 <!--pages/detail/detail.wxml-->
 <view>
   <view class="top">
-  <view class="t-l">左边</view>
-  <view class="t-r">右边</view>
+  <view class="t-l">
+  <image src="{{detail.img}}" mode="widthFix"></image></view>
+  <view class="t-r">
+  <view class="chname">{{detail.nm}}</view>
+  <view class="engname">{{detail.englishName}}</view>
+  <view class="tag">{{detail.tag}}</view>
+  <view class="star" wx:for="{{detail.star}}" wx:key="id">{{item.name}}</view>
+
+  </view>
 </view>
 </view>
