@@ -1,29 +1,13 @@
-// pages/index/index.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    num:1,
-    list:[]
+
   },
-  toDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail',
-    })
-    console.log('跳转')
-  },
-  change_num (e) {
-    console.log(e.target.dataset.num);
-    this.setData({
-      num:e.target.dataset.num
-    })
-  },
-  scroll (e) {
-    console.log(e)
-  },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -42,16 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    let that = this
-    wx.request({
-      url: 'http://localhost:3000/data',
-      success(res){
-        console.log(res.data.hot);
-        that.setData({
-          list: res.data.hot
-        })
-      }
-    })
+
   },
 
   /**

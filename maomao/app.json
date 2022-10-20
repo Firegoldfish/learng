@@ -5,7 +5,8 @@
     "pages/home/home",
     "pages/my/my",
     "pages/show/show",
-    "pages/vide/vide"
+    "pages/vide/vide",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +24,6 @@
         "pagePath": "pages/index/index",
         "iconPath": "/assets/movie.png",
         "selectedIconPath": "/assets/movie-active.png"
-
       },
       {
         "text": "视频",

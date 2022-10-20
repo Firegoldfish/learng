@@ -20,7 +20,7 @@
   <view wx:if ="{{num==1}}">
     <view class="perfectm">
       <text class="title">最受好评电影</text>
-      <scroll-view class="scroll-box" scroll-x="{{true}}">
+      <scroll-view class="scroll-box" scroll-x="{{true}}" bindtap="toDetail">
         <view class="scroll-item" wx:for="{{list}}" wx:key="id">
          <view class="shen"> <image src="{{item.img}}" mode="widthFix"></image></view>
           <view class="film_name">{{item.nm}}</view>
